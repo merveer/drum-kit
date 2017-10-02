@@ -8,8 +8,6 @@
 </head>
 
 <body>
-
-
     <div class="keys">
         <div data-key="65" class="key">
             <kbd>A</kbd>
@@ -63,7 +61,7 @@
         //our aim is to :
         //hit the corresponding key: play sound + animation
         //adding a class 'playing' to the element
-        //keycode.info ->key numbers 
+        //keycode.info ->key numbers
 
 
 
@@ -82,7 +80,7 @@
             this.classList.remove('playing');
         }
 
-        function playSound(e) { //->"e" is the event object full of data describing what happened 
+        function playSound(e) { //->"e" is the event object full of data describing what happened
             const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
             //aim is selecting keycode. attribute selector! es6 template strings
 
